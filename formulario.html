@@ -9,16 +9,17 @@
 
 <body>
     
-    <div> 
+        <div> 
         
         <h1>Cadastro de DEVs</h1>
         <p>Complete suas informações</p>
 
-    </div>
+        </div>
 
     <form> 
-
+<!-- Aqui cria uma caixa para preencher-->
         <fieldset>
+
             <div>
                 <label>Nome</label>
                 <input type="text" name="nome" id="nome">
@@ -29,27 +30,67 @@
                 <input type="text" name="sobrenome" id="sobrenome">
             </div>
         </fieldset>
-
+<br>        
+<!-- Aqui cria uma caixa de gmail -->
         <div>
             <label>Email</label>
             <input type="email" name="email" id="email" placeholder="123@gmail.com" required>
         </div>
-
+<br>        
+<!-- Aqui cria um escolha com bolinhas -->
         <div>
             <label>Gênero:</label>
-            <br>
+<br>
             <label>
-                <input type="radio" name="gênero" value="Homem">Homem
+                <input type="radio" name="gênero" value="Homem" checked>Homem
             </label>
-            <br>
+<br>
             <label>
                 <input type="radio" name="gênero" value="Mulher">Mulher
             </label>
-             <br>
+<br>
             <label>
                 <input type="radio" name="gênero" value="gay">Prefiro não identificar
             </label>
         </div>
+<br>
+<!-- Aqui cria um escolha com setinha  -->
+    <div>
+        <label>workidade</label>
+        <select id="work_idade" name="worki_dade">
+            <option value="" selected disabled>Escolha</option>
+            <option value="junior">Junior</option>
+            <option value="pleno">Pleno</option>
+            <option value="senior">Senior</option>
+        </select>
+     </div>
+
+<br>     
+
+<fieldset>
+    <div>
+        <label>Selecione as linguagens que você utiliza</label> <br><br>
+        <input type="checkbox" name="linguagem1" id="linguagem1" value="HTML">
+        <label for="linguagem1">HTML</label>        <br>
+        <input type="checkbox" name="linguagem2" id="linguagem2" value="Java">
+        <label for="linguagem2">Java</label> <br>
+        <input type="checkbox" name="linguagem3" id="linguagem3" value="Python">
+        <label for="linguagem3">Python</label> <br>
+        <input type="checkbox" name="linguagem4" id="linguagem4" value="C#">
+        <label for="linguagem4">C#</label> <br>
+        <input type="checkbox" name="linguagem5" id="linguagem5" value="CSS">   
+        <label for="linguagem5">CSS</label>
+    </div>
+</fieldset>
+<br>
+
+    <div>
+        <br>
+        <label>Conte um pouco sobre a sua experiencia no trabalho:</label>
+        <textarea row="6" style="width: 26em" name="experiencia" id="experiencia"></textarea>
+    </div>
+<br>
+    <button type="submit">Enviar</button>
 
     </form>
 
